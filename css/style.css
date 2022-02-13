@@ -5,8 +5,7 @@
   transform: scale(0.9);
   object-fit: contain;
 }
-
 .section-category .img {
-  background-color: var(--primary-color);
+  background-color: var(--dark-color-7);
   object-fit: contain;
 }
