@@ -5,10 +5,6 @@
   transform: scale(0.9);
   object-fit: contain;
 }
-header {
-  /* backdrop-filter: blur(10px);
-  box-shadow: 0 0 1rem var(--primary-color-6); */
-}
 .section-category .img {
   background-color: var(--dark-color-7);
   object-fit: contain;
