@@ -40,6 +40,6 @@ li a.btn {
   font-size: 0.75rem;
   line-height: 1.25rem;
 }
-.login-form {
+form.form {
   background-color: var(--light-grey);
 }
