@@ -1,15 +1,45 @@
-.section-category .img:hover {
+:root {
+  --light-grey: rgb(238, 238, 238);
+}
+.hero-image {
+  animation: updown 4s ease-in-out infinite;
+}
+@keyframes updown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.card:hover .img {
   box-shadow: none;
   transition: all 0.1s linear;
   background-color: var(--primary-color);
   transform: scale(0.9);
   object-fit: contain;
 }
-header {
-  /* backdrop-filter: blur(10px);
-  box-shadow: 0 0 1rem var(--primary-color-6); */
-}
+
 .section-category .img {
+  transition: all 0.1s linear;
   background-color: var(--dark-color-7);
   object-fit: contain;
+}
+.hero-section-button {
+  padding: 0.8rem 1rem;
+}
+li a.btn {
+  font-size: 0.9rem;
+  padding: 0.4rem 0.6rem;
+}
+.browse-more-btn {
+  padding: 0.4rem 0.6rem;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+}
+.login-form {
+  background-color: var(--light-grey);
 }
