@@ -21,6 +21,9 @@ nav ul.left,
 nav ul.right {
   flex-wrap: nowrap;
 }
+header nav ul.left .input-box {
+  min-width: 30vw;
+}
 @media (max-width: 535px) {
   header nav ul.left .input-box {
     display: none;
@@ -82,6 +85,49 @@ nav ul.right {
 .hero-section-button {
   padding: 0.8rem 1rem;
 }
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+}
+.hero-section {
+  display: flex;
+  width: 100%;
+  padding: 4rem 6rem;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1200px) {
+  .hero-section-content {
+    order: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .hero-image {
+    order: 1;
+  }
+  .hero-section {
+    width: 100%;
+    gap: 3rem;
+    flex-direction: column;
+    /* margin: 0 auto; */
+  }
+  .section-category,
+  .section-brands {
+    text-align: center;
+    justify-content: center;
+  }
+  .section-category .row {
+    justify-content: center;
+  }
+  .section-brands .row {
+    justify-content: center;
+  }
+}
+
 li a.btn {
   font-size: 0.9rem;
   padding: 0.4rem 0.6rem;
@@ -99,6 +145,7 @@ form.form {
 @media (max-width: 535px) {
   form.form {
     padding: 1rem;
+    margin: 1rem;
   }
 }
 input[type="search"]::-webkit-search-cancel-button {
@@ -145,18 +192,32 @@ section.products {
   overflow: hidden;
   overflow-y: scroll;
   padding-left: 2%;
-  padding-bottom: 25vh;
+  padding-bottom
+￼
+BEYERDYNAMIC - DT 770 PRO
+Reference Grade Closed Back Headphones
+
+Price
+₹ 10,999
+￼
+￼
+￼
+￼
+BEYERDYNAMIC - DT 770 PRO: 25vh;
 }
 .filter-btn {
   display: none;
 }
 @media (max-width: 950px) {
-  section.products {
-    width: 100vw;
+  section.products .row:nth-child(2) {
     justify-content: center;
-    align-items: center;
-    align-content: center;
-    justify-items: center;
+
+    width: 100vw;
+  }
+  section.products .row:nth-child(1) {
+    padding: 0 2rem;
+
+    width: 100vw;
   }
   .sidebar {
     flex: auto;
@@ -179,7 +240,20 @@ section.products {
 .show {
   display: flex !important;
 }
-
+.outofstock {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--dark-color-2);
+  color: var(--primary-color);
+  display: grid;
+  place-content: center;
+  font-size: x-large;
+  font-weight: 600;
+}
 .sidebar-title {
   padding: 0.5rem;
   border-bottom: 2px solid var(--primary-color);
@@ -233,8 +307,7 @@ hr {
   }
 }
 .cart-section {
-  justify-content: center;
-
+  width: 100%;
   height: 100vh;
   overflow: hidden;
   overflow-y: scroll;
@@ -288,4 +361,15 @@ hr {
     width: 100%;
     max-height: 13rem;
   }
+}
+.wishlist-wrapper {
+  top: 20vh;
+  position: relative;
+}
+.wishlist-section {
+  width: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 120vh;
+  padding-bottom: 50vh;
 }

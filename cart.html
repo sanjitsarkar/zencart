@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://xendesign.netlify.app/css/index.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://xendesign.netlify.app/js/index.js"></script>
+    <script src="js/index.js" defer></script>
     <title>ZenCart</title>
 </head>
 
@@ -57,10 +58,13 @@
         </nav>
     </header>
     <main class="h-full t-5 mt-4 l-0 r-0 w-full relative overflow-hidden">
+        <a href="#top" class="btn btn-float-right bg-pink text-light btn-round-md">
+            <i class="fa fa-chevron-up"></i>
+        </a>
         <h1 class="text-2xl text-center pt-2">Shopping Cart</h1>
-        <section class="cart-section w-full h-full  mt-3  mr-0 pr-0 row gap-2 ">
+        <section class="cart-section w-full h-full  mt-3  mr-0 pr-0 row gap-2 row justify-center">
 
-            <div class="cart-products col   gap-1">
+            <div class="cart-products col gap-1 items-center">
                 <div class="card card-horizontal card-dark">
                     <div class="card-header">
 
@@ -223,7 +227,7 @@
                 </div>
 
             </div>
-            <div class="cart-price-details bg p-2 bg-black ">
+            <div class="cart-price-details bg p-2 bg-black br-sm">
                 <div class="price-details">
                     <h1 class="text-xl mb-1">Price Details</h1>
                     <hr>
