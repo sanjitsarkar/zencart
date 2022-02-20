@@ -8,14 +8,19 @@
     <link rel="stylesheet" href="https://xendesign.netlify.app/css/index.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://xendesign.netlify.app/js/index.js" defer></script>
+    <script src="js/index.js" defer></script>
 </head>
 
-<body class="bg-dark   text-light">
+<body class="bg-dark text-light overflow-hidden">
     <header
-        class=" bg-dark-2 l-2 r-2 t-2 p-2 pl-3 pr-3 h-auto fixed row items-center z-50 br-lg b-solid b-1 h-min br-primary back-blur-5 bx-sh-primary-3">
-        <nav class="row items-center justify-between w-full ">
-            <ul class="left row items-center gap-2">
-                <h1 class="text-lg text-light">ZenCart</h1>
+        class=" bg-dark-2 l-2 r-2 t-2 p-2 pl-3 pr-3 h-auto fixed flex items-center z-50 br-lg b-solid b-1 h-min br-primary back-blur-5 bx-sh-primary-3">
+        <nav class="flex items-center justify-between w-full ">
+            <ul class="left row items-center gap-2 justify-between">
+                <button class="menu btn-round-md bg-primary ml-0">
+                    <fa class="fa fa-bars"></fa>
+                </button>
+                <a href="index.html" class="text-lg text-light">ZenCart</a>
+                <i class="search-icon fa fa-search btn btn-round-md btn-secondary"></i>
                 <div class="input-box input input-dark">
                     <i class="fa fa-search"></i>
                     <input type="search" placeholder="Search products..." class="input">
@@ -51,23 +56,21 @@
             </ul>
         </nav>
     </header>
-    <main class="container h-full w-full row">
+    <main class="container w-full row ">
 
-        <aside class="sidebar   col gap-2 overflow-y-auto ">
+        <aside class="sidebar col gap-2 overflow-y-auto ">
             <div class="pr-1 row justify-between">
                 <h3 class="text-lg">
-                    <i class="fa fa-filter"></i>
-                    <span>Filter</span>
+                    Filter
                 </h3>
-                <h3 class="text-lg">
-                    <i class="fa fa-clear"></i>
+                <h3 class="text-lg pointer">
                     Clear
                 </h3>
             </div>
             <div class="col gap-1">
                 <h3 class="sidebar-title text-lg">Price</h3>
-                <h3 class="price-range">
-                    <5k <10k <15k>20k
+                <h3 class="price-range text-lg text-center">
+                    5k-20k
                 </h3>
                 <div class="silder-contaier  col gap-1 justify-start">
                     <input type="range" min="5000" max="20000" value="10000" class="slider" id="slider">
@@ -181,7 +184,12 @@
 
         </aside>
         <section class="products  pt-2 overflow-hidden overflow-y-auto ">
-            <h1 class="text-xl font-md mb-3">Showing All Products</h1>
+            <div class="row justify-between  mb-3 gap-05">
+                <h1 class="text-xl font-md">Showing All Products</h1>
+                <buton class="filter-btn btn btn-primary">
+                    <i class="fa fa-filter"></i>
+                    <span>Filter</span>
+            </div>
             <div class="row gap-1">
                 <div class="card card-sm card-dark  bx-sh-light-3">
                     <div class="card-header">
