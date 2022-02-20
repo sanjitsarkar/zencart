@@ -4,6 +4,7 @@ if(menu && rightNav)
 menu.addEventListener("click",()=>{
 rightNav.classList.toggle("show");
 })
+
 const filterButton = document.querySelector(".filter-btn");
 const sidebar = document.querySelector("aside.sidebar");
 if(filterButton && sidebar)
