@@ -28,7 +28,7 @@ nav ul.right {
   header nav ul.left {
     width: 100%;
     display: flex;
-    justify-content: space-between !important;
+    justify-content: space-between;
   }
   .search-icon {
     visibility: visible;
