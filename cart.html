@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://xendesign.netlify.app/css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://xendesign.netlify.app/js/index.js"></script>
+    <script src="js/index.js" defer></script>
+    <title>ZenCart</title>
+</head>
+
+<body class="bg-dark  overflow-hidden text-light">
+    <header
+        class=" bg-dark-2 l-2 r-2 t-2 p-2 pl-3 pr-3 h-auto fixed flex items-center z-50 br-lg b-solid b-1 h-min br-primary back-blur-5 bx-sh-primary-3">
+        <nav class="flex items-center justify-between w-full ">
+            <ul class="left row items-center gap-2 justify-between">
+                <button class="menu btn-round-md bg-primary ml-0">
+                    <fa class="fa fa-bars"></fa>
+                </button>
+                <a href="index.html" class="text-xl text-light">ZenCart</a>
+                <i class="search-icon fa fa-search btn btn-round-md btn-secondary"></i>
+                <div class="input-box input input-dark">
+                    <i class="fa fa-search"></i>
+                    <input type="search" placeholder="Search products..." class="input">
+                </div>
+            </ul>
+              <ul class="right row items-center gap-1 text-light">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="login.html" class="btn btn-primary">
+                        Login</a>
+                </li>
+                <li><a href="signup.html" class="btn btn-secondary">Signup</a></li>
+
+                <li><a href="cart.html">
+                        <div class="badge-holder">
+                            <i
+                                class="fa fa-shopping-cart grid place-content-center w-12 h-12 bg-light p-2 br-full text-dark"></i>
+                            <span class="badge badge-dark">0</span>
+                        </div>
+                    </a></li>
+                <li><a href="wishlist.html">
+                        <div class="badge-holder">
+                            <i
+                                class="fa fa-heart grid place-content-center w-12 h-12 bg-pink text-light p-2 br-full text-light"></i>
+                            <span class="badge badge-dark">0</span>
+                        </div>
+                    </a></li>
+                <li><a href="">
+                        <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg"
+                            alt="user" class="avatar avatar-xsm">
+
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="h-full t-5 mt-4 l-0 r-0 w-full relative overflow-hidden">
+        <a href="#top" class="btn btn-float-right bg-secondary text-light btn-round-md">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+        <h1 class="text-2xl text-center pt-2">Shopping Cart</h1>
+        <section class="cart-section w-full h-full  mt-3  mr-0 pr-0 row gap-2 row justify-center">
+
+            <div class="cart-products col gap-1 items-center">
+                <div class="card card-horizontal card-dark">
+                    <div class="card-header">
+
+                        <img src="images/behringer-headphone.png" alt="BEYERDYNAMIC" class="object-contain">
+                    </div>
+                    <div class="card-bottom">
+
+                        <div class="card-body ">
+                            <div class="card-title">BEYERDYNAMIC - DT 770 PRO</div>
+                            <p class="card-description">
+                                Reference Grade Closed Back Headphones
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row items-center gap-05">
+                                <h4 class="o-70 font-semibold">Price</h4>
+                                <h4 class="text-md font-medium">₹ 10,999</h4>
+                            </div>
+                            <div class="card-actions justify-between">
+
+                                <button class="btn btn-round-md btn-dark">
+                                    <i class="fa fa-add"></i>
+                                </button>
+                                1
+                                <button class=" btn-round-md btn btn-dark">
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="row gap-1 items-center  p-1">
+                            <button class=" btn btn-round-md  btn-error">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                            <button class=" btn btn-round-md  bg-pink">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-horizontal card-dark">
+                    <div class="card-header">
+
+                        <img src="./images/headphone.png" alt="BEYERDYNAMIC">
+                    </div>
+                    <div class="card-bottom">
+
+                        <div class="card-body ">
+                            <div class="card-title">BEYERDYNAMIC - DT 770 PRO</div>
+                            <p class="card-description">
+                                Reference Grade Closed Back Headphones
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row items-center gap-05">
+                                <h4 class="o-70 font-semibold">Price</h4>
+                                <h4 class="text-md font-medium">₹ 10,999</h4>
+                            </div>
+                            <div class="card-actions justify-between">
+
+                                <button class="btn btn-round-md btn-dark">
+                                    <i class="fa fa-add"></i>
+                                </button>
+                                1
+                                <button class=" btn-round-md btn btn-dark">
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="row gap-1 items-center p-1">
+                            <button class=" btn btn-round-md  btn-error">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                            <button class=" btn btn-round-md  bg-pink">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-horizontal card-dark">
+                    <div class="card-header">
+
+                        <img src="images/behringer-headphone.png" alt="BEYERDYNAMIC" class="object-contain">
+                    </div>
+                    <div class="card-bottom">
+
+                        <div class="card-body ">
+                            <div class="card-title">BEYERDYNAMIC - DT 770 PRO</div>
+                            <p class="card-description">
+                                Reference Grade Closed Back Headphones
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row items-center gap-05">
+                                <h4 class="o-70 font-semibold">Price</h4>
+                                <h4 class="text-md font-medium">₹ 10,999</h4>
+                            </div>
+                            <div class="card-actions justify-between">
+                                <button class="btn btn-round-md btn-dark">
+                                    <i class="fa fa-add"></i>
+                                </button>
+                                1
+                                <button class=" btn-round-md btn btn-dark">
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="row gap-1 items-center p-1">
+                            <button class=" btn btn-round-md  btn-error">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                            <button class=" btn btn-round-md  bg-pink">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-horizontal card-dark">
+                    <div class="card-header">
+
+                        <img src="./images/headphone.png" alt="BEYERDYNAMIC">
+                    </div>
+                    <div class="card-bottom">
+
+                        <div class="card-body ">
+                            <div class="card-title">BEYERDYNAMIC - DT 770 PRO</div>
+                            <p class="card-description">
+                                Reference Grade Closed Back Headphones
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row items-center gap-05">
+                                <h4 class="o-70 font-semibold">Price</h4>
+                                <h4 class="text-md font-medium">₹ 10,999</h4>
+                            </div>
+                            <div class="card-actions justify-between">
+                                <button class="btn btn-round-md btn-dark">
+                                    <i class="fa fa-add"></i>
+                                </button>
+                                1
+                                <button class=" btn-round-md btn btn-dark">
+                                    <i class="fa fa-minus"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+                        <div class="row gap-1 items-center p-1">
+                            <button class=" btn btn-round-md  btn-error">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                            <button class=" btn btn-round-md  bg-pink">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="cart-price-details bg p-2 bg-black br-sm">
+                <div class="price-details">
+                    <h1 class="text-xl mb-1">Price Details</h1>
+                    <hr>
+                    <div class="row justify-between items-center mt-2">
+
+                        <h4 class=" font-normal">Price</h4>
+                        <h4 class=" font-normal">₹ 10,999</h4>
+                    </div>
+                    <div class="row justify-between items-center">
+
+                        <h4 class=" font-normal">Quantity</h4>
+                        <h4 class=" font-normal">1</h4>
+                    </div>
+                    <div class="row justify-between items-center  mb-2">
+
+                        <h4 class=" font-normal">Discount</h4>
+                        <h4 class=" font-normal">₹ 999</h4>
+                    </div>
+                    <hr>
+                    <div class="row justify-between items-center mt-1 mb-1">
+
+                        <h4 class=" font-normal">Total</h4>
+                        <h4 class=" font-normal">₹ 10,000</h4>
+                    </div>
+                    <hr>
+                </div>
+                <div class="coupon-section row items-center justify-between gap-1  mt-2 mb-2 h-fit  content-center">
+                    <input type="text" class="input input-dark" placeholder="Coupon Code">
+                    <button class="apply-btn btn btn-primary p-3">Apply</button>
+                </div>
+                <hr>
+                <div class="col gap-1 mt-3 mb-2">
+                    <button class="btn btn-outline-secondary">Edit Cart</button>
+                    <button class="btn btn-secondary">Place Order</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
