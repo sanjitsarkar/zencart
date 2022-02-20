@@ -24,7 +24,7 @@ nav ul.right {
 header nav ul.left .input-box {
   min-width: 30vw;
 }
-@media (max-width: 535px) {
+@media only screen and (max-width: 535px) {
   header nav ul.left .input-box {
     display: none;
   }
@@ -37,7 +37,7 @@ header nav ul.left .input-box {
     visibility: visible;
   }
 }
-@media (max-width: 870px) {
+@media only screen and (max-width: 870px) {
   header nav ul.right {
     z-index: 999;
     display: none;
@@ -97,7 +97,7 @@ header nav ul.left .input-box {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (max-width: 1200px) {
+@media only screen and screen and (max-width: 1200px) {
   .hero-section-content {
     order: 2;
     width: 100%;
@@ -141,7 +141,7 @@ form.form {
   margin-bottom: 15vh;
   margin-top: 0vh;
 }
-@media (max-width: 535px) {
+@media only screen and (max-width: 535px) {
   form.form {
     padding: 1rem;
     margin: 1rem;
@@ -196,7 +196,7 @@ section.products {
 .filter-btn {
   display: none;
 }
-@media (max-width: 950px) {
+@media only screen and (max-width: 950px) {
   section.products .row:nth-child(2) {
     justify-content: center;
 
@@ -274,7 +274,7 @@ hr {
   max-width: max-content;
   flex: 2;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and only screen and (max-width: 600px) {
   .card-horizontal {
     max-width: max-content;
     max-height: max-content;
@@ -299,7 +299,7 @@ hr {
   overflow: hidden;
   overflow-y: scroll;
 }
-@media only screen and (max-width: 565px) {
+@media only screen and only screen and (max-width: 565px) {
   .cart-price-details,
   .cart-products {
     margin: 0.5rem;
@@ -322,7 +322,7 @@ hr {
   background-color: var(--dark-black);
   width: max-content;
 }
-@media only screen and (max-width: 935px) {
+@media only screen and only screen and (max-width: 935px) {
   .cart-products {
     order: 2;
   }
@@ -331,13 +331,13 @@ hr {
     order: 1;
   }
 }
-@media only screen and (max-width: 580px) {
+@media only screen and only screen and (max-width: 580px) {
   .coupon-section input,
   button {
     width: 100%;
   }
 }
-@media only screen and (max-width: 580px) {
+@media only screen and only screen and (max-width: 580px) {
   .cart-products {
     align-content: center;
   }
