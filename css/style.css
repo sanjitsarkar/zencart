@@ -125,11 +125,11 @@ main {
 }
 .sidebar {
   margin-top: 2vh;
-  height: 100vh;
   padding-bottom: 12vh;
   flex: 3;
   margin: 2rem;
   margin-top: 0;
+  height: 100vh;
   flex-wrap: nowrap;
   overflow: hidden;
   overflow-y: scroll;
@@ -243,16 +243,28 @@ hr {
 }
 .cart-section {
   justify-content: center;
+  height: 100vh;
   overflow: hidden;
+  overflow-y: scroll;
 }
 
 .cart-products {
+  width: 35rem;
+  margin-bottom: 30vh;
   overflow: hidden;
   overflow-y: scroll;
-  width: 35rem;
 }
 
 .cart-price-details {
   background-color: var(--dark-black);
   width: max-content;
+}
+@media only screen and (max-width: 935px) {
+  .cart-products {
+    order: 2;
+  }
+
+  .cart-price-details {
+    order: 1;
+  }
 }
