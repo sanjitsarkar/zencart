@@ -11,6 +11,8 @@ main.container {
   margin-top: 2vh;
   height: 100vh;
   padding-bottom: 12vh;
+  border-left: 2px solid var(--primary-color);
+
   border-right: 2px solid var(--primary-color);
 }
 .hero-image {
@@ -117,7 +119,7 @@ section.products {
 }
 
 .sidebar-title {
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   border-bottom: 2px solid var(--primary-color);
 }
 .silder-container {
