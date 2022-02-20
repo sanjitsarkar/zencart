@@ -2,7 +2,9 @@
   --light-grey: rgb(238, 238, 238);
   --dark-black: hsl(180, 9%, 9%);
 }
-
+html {
+  scroll-behavior: smooth;
+}
 main.container {
   margin-top: 20vh;
   display: flex;
@@ -97,7 +99,7 @@ header nav ul.left .input-box {
   align-items: center;
   justify-content: space-between;
 }
-@media only screen and screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   .hero-section-content {
     order: 2;
     width: 100%;
@@ -274,7 +276,7 @@ hr {
   max-width: max-content;
   flex: 2;
 }
-@media only screen and only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .card-horizontal {
     max-width: max-content;
     max-height: max-content;
@@ -299,7 +301,7 @@ hr {
   overflow: hidden;
   overflow-y: scroll;
 }
-@media only screen and only screen and (max-width: 565px) {
+@media only screen and (max-width: 565px) {
   .cart-price-details,
   .cart-products {
     margin: 0.5rem;
@@ -322,7 +324,7 @@ hr {
   background-color: var(--dark-black);
   width: max-content;
 }
-@media only screen and only screen and (max-width: 935px) {
+@media only screen and (max-width: 935px) {
   .cart-products {
     order: 2;
   }
@@ -331,13 +333,13 @@ hr {
     order: 1;
   }
 }
-@media only screen and only screen and (max-width: 580px) {
+@media only screen and (max-width: 580px) {
   .coupon-section input,
   button {
     width: 100%;
   }
 }
-@media only screen and only screen and (max-width: 580px) {
+@media only screen and (max-width: 580px) {
   .cart-products {
     align-content: center;
   }
