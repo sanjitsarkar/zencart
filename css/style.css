@@ -1,11 +1,199 @@
-.section-category .img:hover {
+:root {
+  --light-grey: rgb(238, 238, 238);
+}
+
+main.container {
+  margin-top: 20vh;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+button.menu {
+  display: none;
+}
+.search-icon {
+  margin-right: 0;
+  margin-left: auto;
+  visibility: hidden;
+}
+nav ul.left,
+nav ul.right {
+  flex-wrap: nowrap;
+}
+@media (max-width: 535px) {
+  header nav ul.left .input-box {
+    display: none;
+  }
+  header nav ul.left {
+    width: 100%;
+    display: flex;
+    justify-content: space-between !important;
+  }
+  .search-icon {
+    visibility: visible;
+  }
+}
+@media (max-width: 870px) {
+  header nav ul.right {
+    z-index: 999;
+    /* display: none; */
+    display: none;
+    flex-direction: column;
+    background-color: var(--dark-color);
+    position: absolute;
+    top: 14vh;
+    width: max-content;
+    padding: 2rem;
+    border-radius: 0.3rem;
+    border: 1px solid var(--primary-color);
+    left: 0;
+  }
+  button.menu {
+    display: block;
+  }
+}
+.hero-image {
+  animation: updown 4s ease-in-out infinite;
+}
+@keyframes updown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.card:hover .img {
   box-shadow: none;
   transition: all 0.1s linear;
   background-color: var(--primary-color);
   transform: scale(0.9);
   object-fit: contain;
 }
+
 .section-category .img {
+  transition: all 0.1s linear;
   background-color: var(--dark-color-7);
   object-fit: contain;
+}
+.hero-section-button {
+  padding: 0.8rem 1rem;
+}
+li a.btn {
+  font-size: 0.9rem;
+  padding: 0.4rem 0.6rem;
+}
+.browse-more-btn {
+  padding: 0.4rem 0.6rem;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+}
+form.form {
+  background-color: var(--light-grey);
+  margin-bottom: 15vh;
+  margin-top: 0vh;
+}
+@media (max-width: 535px) {
+  form.form {
+    padding: 1rem;
+  }
+}
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 50em;
+  background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg)
+    no-repeat 50% 50%;
+  background-size: contain;
+  opacity: 0;
+  pointer-events: none;
+  filter: invert(1);
+}
+
+input[type="search"]:focus::-webkit-search-cancel-button {
+  opacity: 0.3;
+  pointer-events: all;
+}
+
+main {
+  height: 100vh;
+}
+.sidebar {
+  margin-top: 2vh;
+  height: 100vh;
+  padding-bottom: 12vh;
+  flex: 3;
+  margin: 2rem;
+  margin-top: 0;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding-bottom: 25vh;
+
+  border-right: 2px solid var(--primary-color);
+}
+.sidebar .col {
+  padding: 0.5rem;
+}
+section.products {
+  flex: 12;
+  /* padding: 1rem;
+  padding-top: 0;
+  overflow: hidden;
+  overflow-y: scroll; */
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding-left: 2%;
+  padding-bottom: 25vh;
+}
+.filter-btn {
+  display: none;
+}
+@media (max-width: 950px) {
+  section.products {
+    width: 100vw;
+    /* flex: auto; */
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+  }
+  .sidebar {
+    flex: auto;
+    z-index: 999;
+    display: none;
+    background-color: var(--dark-color-1);
+    backdrop-filter: var(--blur-5);
+    position: absolute;
+    top: 32vh;
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+    left: 0;
+    box-shadow: var(--bx-sh-primary-1);
+  }
+  .filter-btn {
+    display: block;
+  }
+}
+.show {
+  display: flex !important;
+}
+
+.sidebar-title {
+  padding: 0.5rem;
+  border-bottom: 2px solid var(--primary-color);
+}
+.silder-container {
+  width: 10%;
+}
+.card-dark {
+  overflow: hidden;
+  background-color: hsl(180, 9%, 9%);
 }

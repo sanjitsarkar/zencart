@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://xendesign.netlify.app/css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://xendesign.netlify.app/js/index.js" defer></script>
+    <script src="js/index.js" defer></script>
+</head>
+
+<body class="bg-dark text-light overflow-hidden">
+    <header
+        class=" bg-dark-2 l-2 r-2 t-2 p-2 pl-3 pr-3 h-auto fixed flex items-center z-50 br-lg b-solid b-1 h-min br-primary back-blur-5 bx-sh-primary-3">
+        <nav class="flex items-center justify-between w-full ">
+            <ul class="left row items-center gap-2 justify-between">
+                <button class="menu btn-round-md bg-primary ml-0">
+                    <fa class="fa fa-bars"></fa>
+                </button>
+                <a href="index.html" class="text-lg text-light">ZenCart</a>
+                <i class="search-icon fa fa-search btn btn-round-md btn-secondary"></i>
+                <div class="input-box input input-dark">
+                    <i class="fa fa-search"></i>
+                    <input type="search" placeholder="Search products..." class="input">
+                </div>
+            </ul>
+              <ul class="right row items-center gap-1 text-light">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="login.html" class="btn btn-primary">
+                        Login</a>
+                </li>
+                <li><a href="signup.html" class="btn btn-secondary">Signup</a></li>
+
+                <li><a href="">
+                        <div class="badge-holder">
+                            <i
+                                class="fa fa-shopping-cart grid place-content-center w-12 h-12 bg-light p-2 br-full text-dark"></i>
+                            <span class="badge badge-dark">0</span>
+                        </div>
+                    </a></li>
+                <li><a href="">
+                        <div class="badge-holder">
+                            <i
+                                class="fa fa-heart grid place-content-center w-12 h-12 bg-pink text-light p-2 br-full text-light"></i>
+                            <span class="badge badge-dark">0</span>
+                        </div>
+                    </a></li>
+                <li><a href="">
+                        <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg"
+                            alt="user" class="avatar avatar-xsm">
+
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container w-full row ">
+
+        <aside class="sidebar col gap-2 overflow-y-auto ">
+            <div class="pr-1 row justify-between">
+                <h3 class="text-lg">
+                    Filter
+                </h3>
+                <h3 class="text-lg pointer">
+                    Clear
+                </h3>
+            </div>
+            <div class="col gap-1">
+                <h3 class="sidebar-title text-lg">Price</h3>
+                <h3 class="price-range text-lg text-center">
+                    5k-20k
+                </h3>
+                <div class="silder-contaier  col gap-1 justify-start">
+                    <input type="range" min="5000" max="20000" value="10000" class="slider" id="slider">
+                    <span id="price">₹ <span id="slider-value" class="slider-value text-light"></span></span>
+                </div>
+            </div>
+            <div class="col gap-1">
+                <h3 class="sidebar-title text-lg">Category</h3>
+
+                <label class="checkbox-container">Headphone
+                    <input type="checkbox" checked>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">DJ Kit
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">Keyboard
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">Studio Mic
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">Studio Mic
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">Speaker
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">Midi Keyboard
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="col gap-1">
+                <h3 class="sidebar-title  text-lg">Brand</h3>
+
+                <label class="checkbox-container">Yamaha
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">Casio
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">Pioneer
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">M-Audio
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">AudioTechnica
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">Sony
+                    <input type="checkbox" checked>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">Behringer
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class=" col gap-1">
+                <h3 class="sidebar-titletext-lg">Rating</h3>
+
+                <label class="radio-container">4 star & above
+                    <input type="radio" name="rating" checked>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="radio-container">3 star & above
+                    <input type="radio" name="rating">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="radio-container">2 star & above
+                    <input type="radio" name="rating">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="radio-container">1 star & above
+                    <input type="radio" name="rating">
+                    <span class="checkmark"></span>
+                </label>
+
+            </div>
+            <div class=" col gap-1">
+                <h3 class="sidebar-title text-lg">Sort by</h3>
+
+                <label class="radio-container">Newest Arrival
+                    <input type="radio" name="sortby" checked>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="radio-container">Price - Low to High
+                    <input type="radio" name="sortby">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="radio-container">Price - High to Low
+                    <input type="radio" name="sortby">
+                    <span class="checkmark"></span>
+                </label>
+
+
+            </div>
+
+
+        </aside>
+        <section class="products  pt-2 overflow-hidden overflow-y-auto ">
+            <div class="row justify-between  mb-3 gap-05">
+                <h1 class="text-xl font-md">Showing All Products</h1>
+                <buton class="filter-btn btn btn-primary">
+                    <i class="fa fa-filter"></i>
+                    <span>Filter</span>
+            </div>
+            <div class="row gap-1">
+                <div class="card card-sm card-dark  bx-sh-light-3">
+                    <div class="card-header">
+
+                        <img src="images/behringer-headphone.png" alt="Iphone 13S" class="h-40 w-full object-contain" />
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-body">
+                            <div class="card-badge  bg-secondary">Best Seller</div>
+
+                            <div class="card-title">BEYERDYNAMIC - DT 770 PRO</div>
+                            <p class="card-description">
+                                Reference Grade Closed Back Headphones
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row items-center gap-05">
+                                <h4 class="o-70 font-semibold">Price</h4>
+                                <h4 class="text-md font-medium">
+                                    <span class="line-through mr-1 text-sm o-90">₹ 17,050
+                                    </span>
+                                    ₹ 10,999
+                                </h4>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn btn-round-md btn-dark">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                                <button class=" btn-round-md btn bg-pink text-light">
+                                    <i class="fa fa-heart"></i>
+                                </button>
+                                <button class="btn btn-round-md  btn-primary">
+                                    <i class="fa fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-sm card-dark">
+                    <div class="card-header">
+
+                        <img src="images/behringer-headphone.png" alt="Iphone 13S" class="h-40 w-full object-contain" />
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-body">
+                            <div class="card-title">BEYERDYNAMIC - DT 770 PRO</div>
+                            <p class="card-description">
+                                Reference Grade Closed Back Headphones
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row items-center gap-05">
+                                <h4 class="o-70 font-semibold">Price</h4>
+                                <h4 class="text-md font-medium">
+                                    <span class="line-through mr-1 text-sm o-90">₹ 17,050
+                                    </span>
+                                    ₹ 10,999
+                                </h4>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn btn-round-md btn-dark">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                                <button class=" btn-round-md btn bg-pink text-light">
+                                    <i class="fa fa-heart"></i>
+                                </button>
+                                <button class="btn btn-round-md  btn-primary">
+                                    <i class="fa fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-sm card-dark">
+                    <div class="card-header">
+
+                        <img src="images/behringer-headphone.png" alt="Iphone 13S" class="h-40 w-full object-contain" />
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-body">
+                            <div class="card-title">BEYERDYNAMIC - DT 770 PRO</div>
+                            <p class="card-description">
+                                Reference Grade Closed Back Headphones
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row items-center gap-05">
+                                <h4 class="o-70 font-semibold">Price</h4>
+                                <h4 class="text-md font-medium">
+                                    <span class="line-through mr-1 text-sm o-90">₹ 17,050
+                                    </span>
+                                    ₹ 10,999
+                                </h4>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn btn-round-md btn-dark">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                                <button class=" btn-round-md btn bg-pink text-light">
+                                    <i class="fa fa-heart"></i>
+                                </button>
+                                <button class="btn btn-round-md  btn-primary">
+                                    <i class="fa fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-sm card-dark">
+                    <div class="card-header">
+
+                        <img src="images/behringer-headphone.png" alt="Iphone 13S" class="h-40 w-full object-contain" />
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-body">
+                            <div class="card-title">BEYERDYNAMIC - DT 770 PRO</div>
+                            <p class="card-description">
+                                Reference Grade Closed Back Headphones
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row items-center gap-05">
+                                <h4 class="o-70 font-semibold">Price</h4>
+                                <h4 class="text-md font-medium">
+                                    <span class="line-through mr-1 text-sm o-90">₹ 17,050
+                                    </span>
+                                    ₹ 10,999
+                                </h4>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn btn-round-md btn-dark">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                                <button class=" btn-round-md btn bg-pink text-light">
+                                    <i class="fa fa-heart"></i>
+                                </button>
+                                <button class="btn btn-round-md  btn-primary">
+                                    <i class="fa fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-sm card-dark">
+                    <div class="card-header">
+
+                        <img src="images/behringer-headphone.png" alt="Iphone 13S" class="h-40 w-full object-contain" />
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-body">
+                            <div class="card-title">BEYERDYNAMIC - DT 770 PRO</div>
+                            <p class="card-description">
+                                Reference Grade Closed Back Headphones
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row items-center gap-05">
+                                <h4 class="o-70 font-semibold">Price</h4>
+                                <h4 class="text-md font-medium">
+                                    <span class="line-through mr-1 text-sm o-90">₹ 17,050
+                                    </span>
+                                    ₹ 10,999
+                                </h4>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn btn-round-md btn-dark">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                                <button class=" btn-round-md btn bg-pink text-light">
+                                    <i class="fa fa-heart"></i>
+                                </button>
+                                <button class="btn btn-round-md  btn-primary">
+                                    <i class="fa fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-sm card-dark">
+                    <div class="card-header">
+                        <img src="images/behringer-headphone.png" alt="Iphone 13S" class="h-40 w-full object-contain" />
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-body">
+                            <div class="card-title">BEYERDYNAMIC - DT 770 PRO</div>
+                            <p class="card-description">
+                                Reference Grade Closed Back Headphones
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row items-center gap-05">
+                                <h4 class="o-70 font-semibold">Price</h4>
+                                <h4 class="text-md font-medium">
+                                    <span class="line-through mr-1 text-sm o-90">₹ 17,050
+                                    </span>
+                                    ₹ 10,999
+                                </h4>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn btn-round-md btn-dark">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                                <button class=" btn-round-md btn bg-pink text-light">
+                                    <i class="fa fa-heart"></i>
+                                </button>
+                                <button class="btn btn-round-md  btn-primary">
+                                    <i class="fa fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-sm card-dark">
+                    <div class="card-header">
+                        <img src="images/behringer-headphone.png" alt="Iphone 13S" class="h-40 w-full object-contain" />
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-body">
+                            <div class="card-title">BEYERDYNAMIC - DT 770 PRO</div>
+                            <p class="card-description">
+                                Reference Grade Closed Back Headphones
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row items-center gap-05">
+                                <h4 class="o-70 font-semibold">Price</h4>
+                                <h4 class="text-md font-medium">
+                                    <span class="line-through mr-1 text-sm o-90">₹ 17,050
+                                    </span>
+                                    ₹ 10,999
+                                </h4>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn btn-round-md btn-dark">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                                <button class=" btn-round-md btn bg-pink text-light">
+                                    <i class="fa fa-heart"></i>
+                                </button>
+                                <button class="btn btn-round-md  btn-primary">
+                                    <i class="fa fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-sm card-dark">
+                    <div class="card-header">
+                        <div class="card-badge  bg-dark">Most Rated</div>
+                        <img src="images/behringer-headphone.png" alt="Iphone 13S" class="h-40 w-full object-contain" />
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-body">
+                            <div class="card-title">BEYERDYNAMIC - DT 770 PRO</div>
+                            <p class="card-description">
+                                Reference Grade Closed Back Headphones
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row items-center gap-05">
+                                <h4 class="o-70 font-semibold">Price</h4>
+                                <h4 class="text-md font-medium">
+                                    <span class="line-through mr-1 text-sm o-90">₹ 17,050
+                                    </span>
+                                    ₹ 10,999
+                                </h4>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn btn-round-md btn-dark">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                                <button class=" btn-round-md btn bg-pink text-light">
+                                    <i class="fa fa-heart"></i>
+                                </button>
+                                <button class="btn btn-round-md  btn-primary">
+                                    <i class="fa fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-sm card-dark">
+                    <div class="card-header">
+                        <img src="images/behringer-headphone.png" alt="Iphone 13S" class="h-40 w-full object-contain" />
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-body">
+                            <div class="card-title">BEYERDYNAMIC - DT 770 PRO</div>
+                            <p class="card-description">
+                                Reference Grade Closed Back Headphones
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row items-center gap-05">
+                                <h4 class="o-70 font-semibold">Price</h4>
+                                <h4 class="text-md font-medium">
+                                    <span class="line-through mr-1 text-sm o-90">₹ 17,050
+                                    </span>
+                                    ₹ 10,999
+                                </h4>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn btn-round-md btn-dark">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                                <button class=" btn-round-md btn bg-pink text-light">
+                                    <i class="fa fa-heart"></i>
+                                </button>
+                                <button class="btn btn-round-md  btn-primary">
+                                    <i class="fa fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
