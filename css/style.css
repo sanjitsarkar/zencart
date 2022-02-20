@@ -21,7 +21,7 @@ nav ul.left,
 nav ul.right {
   flex-wrap: nowrap;
 }
-@media (max-width: 535px) {
+@media only screen and (max-width: 535px) {
   header nav ul.left .input-box {
     display: none;
   }
@@ -34,10 +34,9 @@ nav ul.right {
     visibility: visible;
   }
 }
-@media (max-width: 870px) {
+@media only screen and (max-width: 870px) {
   header nav ul.right {
     z-index: 999;
-    /* display: none; */
     display: none;
     flex-direction: column;
     background-color: var(--dark-color);
@@ -97,7 +96,7 @@ form.form {
   margin-bottom: 15vh;
   margin-top: 0vh;
 }
-@media (max-width: 535px) {
+@media only screen and (max-width: 535px) {
   form.form {
     padding: 1rem;
   }
@@ -142,10 +141,6 @@ main {
 }
 section.products {
   flex: 12;
-  /* padding: 1rem;
-  padding-top: 0;
-  overflow: hidden;
-  overflow-y: scroll; */
   height: 100vh;
   overflow: hidden;
   overflow-y: scroll;
@@ -155,11 +150,9 @@ section.products {
 .filter-btn {
   display: none;
 }
-@media (max-width: 950px) {
+@media only screen and (max-width: 950px) {
   section.products {
     width: 100vw;
-    /* flex: auto; */
-
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -199,7 +192,7 @@ section.products {
   background-color: var(--dark-black);
 }
 hr {
-  background-color: var(--light-color-1);
+  background-color: var(--light-color-7);
 }
 .card-horizontal {
   max-height: 35vh;
@@ -207,7 +200,6 @@ hr {
 .card-horizontal .card-header img {
   height: 100%;
   padding: 1rem;
-  /* width: 100%; */
   object-fit: contain;
 }
 .card-horizontal .card-bottom {
