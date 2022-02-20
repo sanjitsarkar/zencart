@@ -13,19 +13,26 @@
 
 <body class="bg-dark  overflow-x-hidden text-light">
     <header
-        class=" bg-dark-2 l-2 r-2 t-2 p-2 pl-3 pr-3 h-auto fixed row items-center z-50 br-lg b-solid b-1 h-min br-primary back-blur-5 bx-sh-primary-3">
-        <nav class="row items-center justify-between w-full ">
-            <ul class="left row items-center">
-                <h1 class="text-lg text-light">ZenCart</h1>
+        class=" bg-dark-2 l-2 r-2 t-2 p-2 pl-3 pr-3 h-auto fixed flex items-center z-50 br-lg b-solid b-1 h-min br-primary back-blur-5 bx-sh-primary-3">
+        <nav class="flex items-center justify-between w-full ">
+            <ul class="left row items-center gap-2 justify-between">
+                <button class="menu btn-round-md bg-primary ml-0">
+                    <fa class="fa fa-bars"></fa>
+                </button>
+                <a href="index.html" class="text-lg text-light">ZenCart</a>
+                <i class="search-icon fa fa-search btn btn-round-md btn-secondary"></i>
+                <div class="input-box input input-dark">
+                    <i class="fa fa-search"></i>
+                    <input type="search" placeholder="Search products..." class="input">
+                </div>
             </ul>
-            <ul class="right row items-center gap-1 text-light">
+              <ul class="right row items-center gap-1 text-light">
                 <li><a href="index.html">Home</a></li>
                 <li>
                     <a href="login.html" class="btn btn-primary">
                         Login</a>
                 </li>
                 <li><a href="signup.html" class="btn btn-secondary">Signup</a></li>
-
 
                 <li><a href="">
                         <div class="badge-holder">
@@ -43,14 +50,14 @@
                     </a></li>
                 <li><a href="">
                         <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg"
-                            alt="" class="avatar avatar-xsm">
+                            alt="user" class="avatar avatar-xsm">
 
                     </a></li>
             </ul>
         </nav>
     </header>
-    <main class="container h-full t-5 mt-5 l-0 r-0 relative grid place-content-center text-dark w-full">
-        <form class="form p-5 w-full  br-sm text-dark b-solid b-1  br-light bx-sh-light-3 ">
+    <main class="container h-full t-0  l-0 r-0 relative grid place-content-center text-dark w-full">
+        <form class="form p-5   br-sm text-dark b-solid b-1  br-light bx-sh-light-3 ">
             <label class="text-2xl mb-2 block text-center  font-normal">Login</label>
             <div class="col gap-1 mb-2">
                 <div class="input-box input input-light">
