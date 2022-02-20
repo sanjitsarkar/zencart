@@ -19,7 +19,6 @@
   transform: scale(0.9);
   object-fit: contain;
 }
-
 .section-category .img {
   transition: all 0.1s linear;
   background-color: var(--dark-color-7);
