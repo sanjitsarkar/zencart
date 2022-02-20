@@ -37,7 +37,6 @@ nav ul.right {
 @media (max-width: 870px) {
   header nav ul.right {
     z-index: 999;
-    /* display: none; */
     display: none;
     flex-direction: column;
     background-color: var(--dark-color);
@@ -142,10 +141,6 @@ main {
 }
 section.products {
   flex: 12;
-  /* padding: 1rem;
-  padding-top: 0;
-  overflow: hidden;
-  overflow-y: scroll; */
   height: 100vh;
   overflow: hidden;
   overflow-y: scroll;
@@ -158,8 +153,6 @@ section.products {
 @media (max-width: 950px) {
   section.products {
     width: 100vw;
-    /* flex: auto; */
-
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -207,7 +200,6 @@ hr {
 .card-horizontal .card-header img {
   height: 100%;
   padding: 1rem;
-  /* width: 100%; */
   object-fit: contain;
 }
 .card-horizontal .card-bottom {
@@ -237,24 +229,35 @@ hr {
 
   .card-horizontal .card-bottom {
     max-width: max-content;
-
     height: min-content;
   }
 }
 .cart-section {
   justify-content: center;
+
   height: 100vh;
   overflow: hidden;
   overflow-y: scroll;
 }
-
+@media only screen and (max-width: 565px) {
+  .cart-price-details,
+  .cart-products {
+    margin: 0.5rem;
+  }
+  .card-header img {
+    width: 100%;
+    max-height: 10rem;
+  }
+}
 .cart-products {
   width: 35rem;
-  margin-bottom: 30vh;
+  margin-bottom: 35vh;
   overflow: hidden;
   overflow-y: scroll;
 }
-
+.apply-btn {
+  padding: 0.75rem 1rem;
+}
 .cart-price-details {
   background-color: var(--dark-black);
   width: max-content;
@@ -266,5 +269,23 @@ hr {
 
   .cart-price-details {
     order: 1;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .coupon-section input,
+  button {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .cart-products {
+    align-content: center;
+  }
+  .card-horizontal {
+    flex-direction: column;
+  }
+  .card-header img {
+    width: 100%;
+    max-height: 13rem;
   }
 }
