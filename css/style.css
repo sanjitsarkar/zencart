@@ -1,6 +1,6 @@
 :root {
   --light-grey: rgb(238, 238, 238);
-  --dark-black: hsl(180, 9%, 9%);
+  --dark-black: hsl(180, 6%, 6%);
 }
 html {
   scroll-behavior: smooth;
