@@ -136,11 +136,6 @@ input[type="search"]:focus::-webkit-search-cancel-button {
   }
 
   /* Product Category and Brand Styling Section */
-  .section-category .img {
-    transition: all 0.1s linear;
-    background-color: var(--dark-color-7);
-    object-fit: contain;
-  }
 
   .section-category,
   .section-brands {
@@ -365,6 +360,11 @@ form.form {
 }
 
 /* Product Category Cart */
+.section-category .img {
+  transition: all 0.1s linear;
+  background-color: var(--dark-color-7);
+  object-fit: contain;
+}
 .section-category .card .img {
   object-fit: contain;
 }
