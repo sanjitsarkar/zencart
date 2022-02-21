@@ -119,7 +119,7 @@ input[type="search"]:focus::-webkit-search-cancel-button {
       font-size: 4rem;
     }
     .hero-section-description {
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
   }
 
@@ -133,24 +133,6 @@ input[type="search"]:focus::-webkit-search-cancel-button {
     100% {
       transform: translateY(0px);
     }
-  }
-
-  /* Card Styling Section */
-  .card:hover .img {
-    box-shadow: none;
-    transition: all 0.1s linear;
-    background-color: var(--primary-color);
-    transform: scale(0.9);
-    object-fit: contain;
-  }
-  li a.btn {
-    font-size: 0.9rem;
-    padding: 0.4rem 0.6rem;
-  }
-  .browse-more-btn {
-    padding: 0.4rem 0.6rem;
-    font-size: 0.75rem;
-    line-height: 1.25rem;
   }
 
   /* Product Category and Brand Styling Section */
@@ -380,6 +362,27 @@ form.form {
     max-width: max-content;
     height: min-content;
   }
+}
+
+/* Product Category Cart */
+.section-category .card .img {
+  object-fit: contain;
+}
+.section-category .card:hover .img {
+  box-shadow: none;
+  transition: all 0.1s linear;
+  background-color: var(--primary-color);
+  transform: scale(0.9);
+  object-fit: contain;
+}
+li a.btn {
+  font-size: 0.9rem;
+  padding: 0.4rem 0.6rem;
+}
+#browse-more-btn {
+  padding: 0.4rem 0.6rem;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
 }
 
 /* Other Styling */
