@@ -2,13 +2,11 @@
   --light-grey: rgb(238, 238, 238);
   --dark-black: hsl(180, 9%, 9%);
 }
-
-main.container {
-  margin-top: 20vh;
-  display: flex;
-  width: 100%;
-  height: auto;
+html {
+  scroll-behavior: smooth;
 }
+
+/* Header Styling Section */
 button.menu {
   display: none;
 }
@@ -17,9 +15,13 @@ button.menu {
   margin-left: auto;
   visibility: hidden;
 }
+
 nav ul.left,
 nav ul.right {
   flex-wrap: nowrap;
+}
+header nav ul.left .input-box {
+  min-width: 30vw;
 }
 @media only screen and (max-width: 535px) {
   header nav ul.left .input-box {
@@ -28,7 +30,7 @@ nav ul.right {
   header nav ul.left {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between !important;
   }
   .search-icon {
     visibility: visible;
@@ -52,55 +54,6 @@ nav ul.right {
     display: block;
   }
 }
-.hero-image {
-  animation: updown 4s ease-in-out infinite;
-}
-@keyframes updown {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-.card:hover .img {
-  box-shadow: none;
-  transition: all 0.1s linear;
-  background-color: var(--primary-color);
-  transform: scale(0.9);
-  object-fit: contain;
-}
-
-.section-category .img {
-  transition: all 0.1s linear;
-  background-color: var(--dark-color-7);
-  object-fit: contain;
-}
-.hero-section-button {
-  padding: 0.8rem 1rem;
-}
-li a.btn {
-  font-size: 0.9rem;
-  padding: 0.4rem 0.6rem;
-}
-.browse-more-btn {
-  padding: 0.4rem 0.6rem;
-  font-size: 0.75rem;
-  line-height: 1.25rem;
-}
-form.form {
-  background-color: var(--light-grey);
-  margin-bottom: 15vh;
-  margin-top: 0vh;
-}
-@media only screen and (max-width: 535px) {
-  form.form {
-    padding: 1rem;
-  }
-}
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
   height: 1em;
@@ -119,53 +72,166 @@ input[type="search"]:focus::-webkit-search-cancel-button {
   pointer-events: all;
 }
 
-main {
-  height: 100vh;
+/* Hero Stlying Section */
+.hero-image {
+  animation: updown 4s ease-in-out infinite;
 }
+.hero-section-button {
+  padding: 0.8rem 1rem;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+}
+.hero-section {
+  display: flex;
+  width: 100%;
+  padding: 4rem 6rem;
+  align-items: center;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 1200px) {
+  .hero-section-content {
+    order: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .hero-image {
+    order: 1;
+  }
+  .hero-section {
+    width: 100%;
+    gap: 3rem;
+    flex-direction: column;
+  }
+  @media only screen and (max-width: 550px) {
+    .hero-section {
+      padding: 20vh 0;
+    }
+    .hero-image {
+      display: none;
+    }
+    .hero-section-title {
+      font-size: 4rem;
+    }
+    .hero-section-description {
+      font-size: 1rem;
+    }
+  }
+
+  @keyframes updown {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  /* Card Styling Section */
+  .card:hover .img {
+    box-shadow: none;
+    transition: all 0.1s linear;
+    background-color: var(--primary-color);
+    transform: scale(0.9);
+    object-fit: contain;
+  }
+  li a.btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.6rem;
+  }
+  .browse-more-btn {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+  }
+
+  /* Product Category and Brand Styling Section */
+  .section-category .img {
+    transition: all 0.1s linear;
+    background-color: var(--dark-color-7);
+    object-fit: contain;
+  }
+
+  .section-category,
+  .section-brands {
+    text-align: center;
+    justify-content: center;
+  }
+  .section-category .row {
+    justify-content: center;
+  }
+  .section-brands .row {
+    justify-content: center;
+  }
+}
+
+/* Login and Sign Up Form Stying Section */
+form.form {
+  background-color: var(--light-grey);
+  margin-bottom: 15vh;
+  margin-top: 20vh;
+}
+@media only screen and (max-width: 535px) {
+  form.form {
+    padding: 1rem;
+  }
+}
+
+/* Product Listing Styling Section */
 .sidebar {
-  margin-top: 2vh;
-  padding-bottom: 12vh;
+  margin-top: 20vh;
   flex: 3;
-  margin: 2rem;
-  margin-top: 0;
-  height: 100vh;
+  padding-left: 1em;
+  height: 100%;
   flex-wrap: nowrap;
   overflow: hidden;
   overflow-y: scroll;
-  padding-bottom: 25vh;
-
+  padding-bottom: 22vh;
   border-right: 2px solid var(--primary-color);
 }
 .sidebar .col {
   padding: 0.5rem;
 }
-section.products {
+.products {
   flex: 12;
-  height: 100vh;
+  padding-top: 20vh;
+  height: 100%;
+  padding-bottom: 2vh;
   overflow: hidden;
   overflow-y: scroll;
   padding-left: 2%;
-  padding-bottom: 25vh;
 }
 .filter-btn {
+  z-index: 99;
   display: none;
 }
 @media only screen and (max-width: 950px) {
-  section.products {
-    width: 100vw;
+  section.products .row:nth-child(2) {
     justify-content: center;
-    align-items: center;
-    align-content: center;
-    justify-items: center;
+
+    width: 100vw;
+  }
+  section.products .row:nth-child(1) {
+    padding: 0 2rem;
+
+    width: 100vw;
   }
   .sidebar {
     flex: auto;
-    z-index: 999;
+    z-index: 4;
     display: none;
     background-color: var(--dark-color-1);
     backdrop-filter: var(--blur-5);
     position: absolute;
-    top: 32vh;
+    top: 30vh;
     margin: 0;
     padding: 1rem;
     width: 100%;
@@ -179,7 +245,20 @@ section.products {
 .show {
   display: flex !important;
 }
-
+.outofstock {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--dark-color-2);
+  color: var(--primary-color);
+  display: grid;
+  place-content: center;
+  font-size: x-large;
+  font-weight: 600;
+}
 .sidebar-title {
   padding: 0.5rem;
   border-bottom: 2px solid var(--primary-color);
@@ -187,12 +266,83 @@ section.products {
 .silder-container {
   width: 10%;
 }
+
+/* Cart Management Styling Section */
+.cart-wrapper {
+  padding-top: 20vh;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+@media only screen and (max-width: 565px) {
+  .cart-price-details,
+  .cart-products {
+    margin: 0.5rem;
+  }
+  .card-header img {
+    width: 100%;
+    max-height: 10rem;
+  }
+}
+.cart-products {
+  width: 35rem;
+  padding-bottom: 5vh;
+}
+.apply-btn {
+  padding: 0.75rem 1rem;
+}
+.cart-price-details {
+  background-color: var(--dark-black);
+  width: max-content;
+}
+
+@media only screen and (max-width: 935px) {
+  .cart-products {
+    order: 2;
+  }
+
+  .cart-price-details {
+    order: 1;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .coupon-section input,
+  button {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .cart-products {
+    align-content: center;
+  }
+  .card-horizontal {
+    flex-direction: column;
+  }
+  .card-header img {
+    width: 100%;
+    max-height: 13rem;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .cart-section {
+    padding: 1rem;
+  }
+  .card-header img {
+    width: 100%;
+    max-height: 10rem;
+  }
+}
+
+/* WishList Page */
+.wishlist-wrapper {
+  top: 20vh;
+  position: relative;
+}
+
+/* Card Styling Section */
 .card-dark {
   overflow: hidden;
   background-color: var(--dark-black);
-}
-hr {
-  background-color: var(--light-color-7);
 }
 .card-horizontal {
   max-height: 35vh;
@@ -210,7 +360,6 @@ hr {
 .card-horizontal .card-header {
   height: fit-content;
   max-width: max-content;
-
   flex: 2;
 }
 @media only screen and (max-width: 600px) {
@@ -229,34 +378,11 @@ hr {
 
   .card-horizontal .card-bottom {
     max-width: max-content;
-
     height: min-content;
   }
 }
-.cart-section {
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  overflow-y: scroll;
-}
 
-.cart-products {
-  width: 35rem;
-  margin-bottom: 30vh;
-  overflow: hidden;
-  overflow-y: scroll;
-}
-
-.cart-price-details {
-  background-color: var(--dark-black);
-  width: max-content;
-}
-@media only screen and (max-width: 935px) {
-  .cart-products {
-    order: 2;
-  }
-
-  .cart-price-details {
-    order: 1;
-  }
+/* Other Styling */
+hr {
+  background-color: var(--light-color-8);
 }
